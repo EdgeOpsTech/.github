@@ -1,28 +1,68 @@
 # 👋 Welcome to EdgeOpsTech
 
-We build and maintain automation, DevOps, and cloud infrastructure projects.  
-This organization hosts reusable modules, CI/CD workflows, and service tools for modern engineering teams.
+We build and maintain automation, DevOps, and cloud infrastructure projects for modern engineering teams.
+This organization hosts reusable modules, CI/CD workflows, Kubernetes tooling, and full-stack service deployments.
 
 ---
 
-### 🚀 What you’ll find here
-- **Infrastructure as Code (IaC)** – Terraform modules, landing zones, and automation
-- **CI/CD Workflows** – GitHub Actions, reusable pipelines, and deployment tooling
-- **Service Bots & Integrations** – GitHub Apps, automation bots, and connectors
-- **Sample Projects** – Demos and reference implementations for best practices
+## 🚀 Projects
+
+### ☸️ Kubernetes & Helm
+
+| Project | Description |
+|---|---|
+| **edgeops-helmchart-service** | Custom Helm chart library for deploying services to Kubernetes. Supports multi-environment rollout across dev and failover clusters. |
+| **edgeops-superapp-service** | Backend microservice for the SuperApp platform. Deployed via CD pipelines with Prometheus monitoring integration. |
+| **edgeops-superapp-web** | Frontend web application for the SuperApp platform. React-based UI with modern e-commerce styling, containerized and deployed alongside the backend service. |
 
 ---
 
-📫 For questions or contributions, please open an issue or reach out via discussions.
+### 🔁 CI/CD & GitOps
 
+| Project | Description |
+|---|---|
+| **edgeops-harness-config** | Harness pipeline definitions for rolling deployments targeting AKS and failover clusters. Includes service definitions, connector configs, and environment infrastructure mappings. |
+| **GitHub Actions Workflows** | Reusable GitHub Actions workflows for CI automation, cron scheduling, Dependabot configuration, and ARM template deployments. |
 
-<!--
+---
 
-**Here are some ideas to get you started:**
+### ☁️ Infrastructure as Code
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+| Project | Description |
+|---|---|
+| **Azure Data Factory Pipelines** | ARM template–based CI/CD for ADF across multiple environments. Includes managed private endpoint provisioning, parameterized deployments, and Terraform-based managed identity migration. |
+| **Terraform Modules** | Cloud infrastructure modules for Azure, AWS, and GCP. Covers landing zones, managed identities, networking, and service provisioning patterns. |
+
+---
+
+### 📊 Observability & Tooling
+
+| Project | Description |
+|---|---|
+| **KontainMonitor** | Container monitoring dashboard for local Docker environments with real-time visibility into running workloads. |
+| **Prometheus Monitoring Stack** | Kubernetes-native monitoring configuration supporting multi-cluster observability across dev and failover environments. |
+
+---
+
+## 🛠️ Stack & Tooling
+
+- **Orchestration**: Kubernetes · Helm · Rancher Desktop · k9s
+- **CI/CD**: GitHub Actions · Harness · GitOps workflows
+- **Cloud**: Azure · AWS · GCP
+- **Observability**: Prometheus · Grafana
+- **Languages & Frameworks**: Java (Spring Boot) · React · Python
+- **Containers**: Docker · GitHub Container Registry
+
+---
+
+## 🤝 Contributing
+
+All projects follow GitOps principles — changes go through PRs and are deployed via pipelines.
+
+- Open an **Issue** to report bugs or propose features
+- Start a **Discussion** for architectural questions or ideas
+- Check individual repo READMEs for local setup and contribution guidelines
+
+---
+
+📫 For questions or contributions, open an issue or reach out via Discussions.
